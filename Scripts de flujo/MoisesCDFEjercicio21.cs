@@ -2,21 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MoisesCDFEjercicio8 : MonoBehaviour
+public class MoisesCDFEjercicio21 : MonoBehaviour
 {
     // Start is called before the first frame update
-    int valor1 = 15;
+    public int valorAbsoluto;
 
     void Start()
     {
-        while (valor1 > 5){
-
-            if (valor1%2!=0){
-                
-                Debug.Log(valor1 + " ");
-            }
-            valor1--;
+        if (valorAbsoluto<0){
+            valorAbsoluto = valorAbsoluto * -1;
         }
+
+        Debug.Log("El valor absoluto es: " + valorAbsoluto);
     }
 
     // Update is called once per frame

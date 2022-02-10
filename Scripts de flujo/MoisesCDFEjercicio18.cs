@@ -2,21 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MoisesCDFEjercicio8 : MonoBehaviour
+public class MoisesCDFEjercicio18 : MonoBehaviour
 {
     // Start is called before the first frame update
-    int valor1 = 15;
-
+    int contadorRegresivo = 20;
     void Start()
     {
-        while (valor1 > 5){
-
-            if (valor1%2!=0){
-                
-                Debug.Log(valor1 + " ");
-            }
-            valor1--;
+        while (contadorRegresivo > 0){
+            Debug.Log("Espere");
+            contadorRegresivo = contadorRegresivo -2;
         }
+
+        Debug.Log("Listo!");
     }
 
     // Update is called once per frame
